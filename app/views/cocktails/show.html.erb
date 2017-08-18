@@ -17,6 +17,7 @@
 
   </div>
   <ul>
+    <li><%= link_to "Delete Cocktail", cocktail_path(@cocktail), method: :delete %></li>
   <% @cocktail.doses.each do |dose| %>
     <li>
       <%= dose.description %> — <%= dose.ingredient.name %> —
