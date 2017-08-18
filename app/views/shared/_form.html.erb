@@ -3,5 +3,6 @@
   <%#= f.input :address %>
    <%#= f.input :category, collection: ["chinese", "italian", "japanese", "french", "belgian"] %>
     <%#= f.input :phone_number %>
+    <%= f.input :photo, as: :attachinary %>
   <%= f.button :submit, class: "btn btn-primary"%>
 <% end %>
