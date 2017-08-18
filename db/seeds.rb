@@ -13,5 +13,8 @@
     # category:  Faker::Food.ingredient,
     # phone_number: Faker::PhoneNumber.cell_phone
   )
-  cocktail.save!
+  cocktail.save
 end
+
+ingredients = %w(lemon ice mint leaves redbull jagermeister sugar tonic gin rhum)
+ingredients.each { |ingredient| Ingredient.create(name: ingredient) }
